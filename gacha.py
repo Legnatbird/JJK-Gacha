@@ -7,7 +7,7 @@ def calculate_multis_banner(initial_points):
     """
 
     # Puntos iniciales usables (máximo 100 por banner)
-    multis_needed = 25
+    multis_needed = 24  # De 25 a 24 porque el juego regala 1 multi
     usable_points = min(initial_points, 100)
 
     # Multis que te ahorras por los puntos iniciales
@@ -17,7 +17,7 @@ def calculate_multis_banner(initial_points):
     pity_multis = multis_needed - saved_multis
 
     # Probabilidad de obtener el personaje en cada multi es 0.7%
-    prob_per_multi = 0.007  # 0.7% por multi según lo especificado
+    prob_per_multi = 0.007  # 0.7% por multi
 
     return pity_multis, usable_points, prob_per_multi
 
